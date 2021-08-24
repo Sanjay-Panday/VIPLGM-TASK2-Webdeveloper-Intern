@@ -20,7 +20,7 @@ const GetUsers = () => {
         <div className="head">
             <div className="nav">
             <nav className="inner_nav">
-                <h1>Zippy Usercard</h1>
+                <h1>LGM USERCARD</h1>
             
                 <button className="button" onClick={onClick}>Get Users Details</button>
             </nav>
