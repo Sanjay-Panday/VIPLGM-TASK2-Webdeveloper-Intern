@@ -1,0 +1,239 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,100;1,200&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: lightgreen;
+  border-radius: 10px;
+  font-family: "Raleway", sans-serif;
+}
+
+.lds-roller {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-top: 35vh;
+    margin-left: 49%;
+
+  
+    
+  }
+  .lds-roller div {
+    animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    transform-origin: 40px 40px;
+  }
+  .lds-roller div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: green;
+    margin: -4px 0 0 -4px;
+  }
+  .lds-roller div:nth-child(1) {
+    animation-delay: -0.036s;
+  }
+  .lds-roller div:nth-child(1):after {
+    top: 63px;
+    left: 63px;
+  }
+  .lds-roller div:nth-child(2) {
+    animation-delay: -0.072s;
+  }
+  .lds-roller div:nth-child(2):after {
+    top: 68px;
+    left: 56px;
+  }
+  .lds-roller div:nth-child(3) {
+    animation-delay: -0.108s;
+  }
+  .lds-roller div:nth-child(3):after {
+    top: 71px;
+    left: 48px;
+  }
+  .lds-roller div:nth-child(4) {
+    animation-delay: -0.144s;
+  }
+  .lds-roller div:nth-child(4):after {
+    top: 72px;
+    left: 40px;
+  }
+  .lds-roller div:nth-child(5) {
+    animation-delay: -0.18s;
+  }
+  .lds-roller div:nth-child(5):after {
+    top: 71px;
+    left: 32px;
+  }
+  .lds-roller div:nth-child(6) {
+    animation-delay: -0.216s;
+  }
+  .lds-roller div:nth-child(6):after {
+    top: 68px;
+    left: 24px;
+  }
+  .lds-roller div:nth-child(7) {
+    animation-delay: -0.252s;
+  }
+  .lds-roller div:nth-child(7):after {
+    top: 63px;
+    left: 17px;
+  }
+  .lds-roller div:nth-child(8) {
+    animation-delay: -0.288s;
+  }
+  .lds-roller div:nth-child(8):after {
+    top: 56px;
+    left: 12px;
+  }
+ .nav{
+   width: 100%;
+   height: 100px;
+   background-color: red;
+ }
+
+ .inner_nav h1{
+   margin-left: 100px;
+   margin-top: 2.3%;
+  float: left;
+  text-shadow: 3px 3px 3px white;
+  animation: sanjay 3s linear infinite;
+}
+@keyframes sanjay{
+  0%,10%,30%,50%,70%,90%{
+    color: rgba(31, 31, 247);
+  }
+}
+
+.inner_nav button{
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 100px;
+   margin-top: 2.3%;
+  float: right;
+  cursor: pointer;
+  background-color: mediumslateblue;
+}
+button:hover{
+  color: black;
+  background-color: mediumspringgreen;
+}
+h2{
+  margin-top: 35px;
+  text-align: center;
+}
+
+.cards{
+    width: 100%;
+    height: auto;
+}
+.card{
+    margin:6%;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+    background-color: #fff;
+    width: 21.25%;
+    height: 350px;
+    border-radius: 12px;
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+    float: left;
+    transition-duration: 1000ms;
+    cursor: pointer;
+    
+}
+.card:hover{
+    box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transform:rotate(5deg);
+
+}
+    
+.card_image{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+
+}
+.card_info{
+  height: 100px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 0px 24px 24px 24px;
+    
+}
+.card_category {
+  margin-top: 30px;
+  text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #000;
+    text-shadow: 3px 4px 4px lightblue;
+}
+.card_titles{
+  color: #868686;
+  font-size: .8rem;
+    margin-bottom: 10px;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #fff;
+    text-transform: capitalize;
+
+}
+
+.card_title{
+  margin-top: 80px;
+  font-size: 1rem;
+  font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #fff;
+    text-transform: capitalize;
+
+}
+.button1{
+  color: black;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 60px;
+  background-color: lightcoral;
+  font-weight: bold;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+
+
+
+@media (max-width:800px){
+  .card {
+      float: none;
+      margin: 5%;
+      width:50%;
+
+  }
+
+}
+
+@media (max-width:768px){
+    .card {
+        float: none;
+        margin: 5%;
+        width:90%;
+
+    }
+}
